@@ -1,0 +1,13 @@
+[Unit]
+Description=Configure WiFi from /boot/wifi.txt
+After=local-fs.target
+RequiresMountsFor=/boot
+ConditionPathExists=/boot/wifi.txt
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/firstboot-wifi.sh
+RemainAfterExit=true
+
+[Install]
+WantedBy=multi-user.target
