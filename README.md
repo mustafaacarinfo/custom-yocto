@@ -1,2 +1,2 @@
-# custom-yocto
-my custom rootfs and yocto
+# custom-kernel & root file system
+my custom rootfs and kernel
